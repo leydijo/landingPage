@@ -1,0 +1,52 @@
+header {
+    height: 50px;
+    .navbar-brand {
+        color: $color-black;
+        font-weight: 900;
+    }
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    //height: 100vh;
+    background-color: $color-fondo;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../public/images/banner2020.jpg");
+
+    .contentBanner {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        color: $color-orange;
+        background: $color-background;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 30px;
+            font-size: 40px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: $color-orange;
+            font-weight: 900;
+            padding: 10px 20px;
+            border: 1px solid $white;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: $white;
+                color: $hoverboton;
+            }
+        }
+    }
+}
